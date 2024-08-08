@@ -16,8 +16,9 @@ const inProgressElem = document.getElementById("inProgress")
 
 addNewElem.addEventListener("click", function() {
 	let inputValue = inputFieldElem.value
-
-	push(retouchesInDb, inputValue)
+	if (inputValue) {
+		push(retouchesInDb, inputValue)
+	}
 	
 	clearField()
 
