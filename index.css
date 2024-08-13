@@ -1,116 +1,106 @@
-html, body {
-	background-image: url('./assets/background.png');
-	background-size: cover;
-	background-repeat: no-repeat; 
-	background-position: center;
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	color: #d8debf;
-	user-select: none;
+
+body {
+    font-family: 'Inconsolata', monospace;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	max-width: 600px;
-	margin: 30px auto;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
 }
 
-img {
-	width: 200px;
-	margin: 0 auto;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-input {
-	color: #CFDCD6; 
-	background-color: #F6FAF7;
-	border: 2px solid transparent;
-	padding: 10px;
-	border-radius: 8px;
-	font-size: 20px;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	margin: 20px 0;
-	height: 50px; 
-	transition: border-color 0.3s; /* Transition douce pour le changement de couleur */
+.logo img {
+    max-height: 40px; 
+    margin-right: 15px;
 }
 
-input:focus {
-	border-color: #27d86c; /* Couleur du contour au focus */
-	outline: none; /* Retire le contour par défaut du navigateur */
+.logo h1 {
+    font-size: 24px;
+    color: #000000;
+    margin: 0; 
 }
 
-button {
-	/* padding: 20px 50px; */
-	font-size: 1rem;
-	cursor: pointer;
-	border: 0px;
-	background: linear-gradient(225deg, #a8e6cf 0%, #d5f4e6 50%, #c0e5d1 100%); /* Dégradé de vert doux */
-	position: relative;
-	transition: all .2s;
-	overflow: hidden;
-	color: #2e8b57; /* Couleur de texte harmonisée avec le vert */
-	border-radius: 30px;
-	height: 60px;
-	width: 150px;
-	align-self: center;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(143, 64, 248, .25);
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    margin: 0;
+    padding: 0;
 }
 
-button::after {
-	content: '';
-	width: 300px; /* Réduit la taille initiale */
-	height: 300px; /* Réduit la taille initiale */
-	position: absolute;
-	top: 50%; /* Centre verticalement */
-	left: 50%; /* Centre horizontalement */
-	transform: translate(-50%, -50%) scale(0); /* Centre et réduit la taille initiale */
-	background-image: linear-gradient(225deg, #a8e6cf 0%, #d5f4e6 50%, #c0e5d1 100%); /* Dégradé de vert doux */
-	z-index: -1;
-	transition: all .5s;
+nav ul li {
+    display: inline;
 }
 
-button:hover::after {
-	transform: translate(-50%, -50%) scale(1.5); /* Agrandit au survol */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
 }
 
-button:hover {
-	transform: translate(0, -6px);
-	box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(143, 64, 248, .25);
+nav ul li a:hover {
+    color: #007bff;
 }
 
-ul {
-	list-style-type: none;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
+.button {
+    display: inline-block; /* Assure que le bouton est un bloc en ligne */
+    font-size: 1rem;
+    cursor: pointer;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px; /* Ajustez si nécessaire */
+    padding: 10px 20px; /* Ajuste l'espace intérieur du bouton */
+    text-align: center;
+    text-decoration: none; /* Enlève le soulignement par défaut des liens */
+    transition: all 0.3s;
+    width: 200px; /* Ajustez la largeur si nécessaire */
+    height: 20px; /* Ajustez la hauteur si nécessaire */
 }
 
-ul li {
-	font-size: 30px;
-	background-color: #FDF9F7;
-	padding: 15px;
-	border-radius: 10px;
-	border: 3px solid #eee1f5;
-	flex-grow: 1;
-	text-align: center;
-	box-shadow: 0px 1px, 4px rgba(0, 0, 0, 0.2);
+.button:hover {
+    background: #ffffff; /* Fond noir au survol */
+    color: #000000; /* Texte blanc au survol */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+    transform: translateY(-5px); /* Légère élévation au survol */
+    border: 1px solid #000000;
 }
 
-ul li:hover {
-	background-color: #eee1f5;
-	cursor: pointer;
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
 }
 
-label {
+.hero .main-image {
+    max-width: 80%; /* Réduire la largeur maximale pour agrandir l'image relative à son conteneur */
+    height: auto;
+    min-height: 400px; /* Définir une hauteur minimale pour garantir que l'image soit grande */
+    margin: 0 auto 20px auto; /* Espace sous l'image */
     display: block;
-    font-size: 3cap;
-    font-weight: bold;
-    margin-top : 50px;
-	text-align: center;
-    color: #A276B5;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 2px solid #ddd;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

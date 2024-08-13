@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="suivi-retouches.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/icon2.png" alt="Logo" id="logo">
+            <h1>LES RETOUCHES DE SISI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="suivi-retouches.html">Suivi des Retouches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <label for="retouches">MA DEMANDE :</label>
+        <div class="input-container">
+            <img src="assets/icon1.png" alt="Icone 1" class="input-icon">
+            <input type="text" class="shop-name-input" placeholder="Nom de la boutique">
+        </div>
+        
+        <div class="input-container">
+            <img src="assets/icon2.png" alt="Icone 2" class="input-icon">
+            <input type="text" class="input-field-input" placeholder="Type de retouche">
+        </div>
+        
+        <div class="input-container">
+            <img src="assets/icon3.png" alt="Icone 3" class="input-icon">
+            <input type="text" class="date-input" placeholder="Sélectionner une date">
+        </div>
+        
+        <button class="add-button">Ajouter</button>
+        <label for="retouches">EN COURS :</label>
+        <ul class="in-progress-list"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="suivi-retouches.js" type="module"></script>
+    </body>
+</html>

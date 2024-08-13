@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Suivi Retouches</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
-		<link rel="manifest" href="/fav/site.webmanifest">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Ultra&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="index.css">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<div class="container">
-			<img src="assets/machine.png">
-			<input type="text" id="inputField" placeholder="Tapez ici">
-			<button id="addNew">Ajouter</button>
-			<label for="retouches">En cours :</label>
-			<ul id="inProgress"></ul>
-		</div>
-		<script src="index.js" type="module"></script>
-	</body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/icon2.png" alt="Logo" id="logo">
+            <h1>LES RETOUCHES DE SISI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="suivi-retouches.html">Suivi des Retouches</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="assets/maincouture.png" alt="Image Principale" class="main-image"> 
+            <p>RÉPARER, RETOUCHER, RÉINVENTER.</p>
+            <a href="suivi-retouches.html" class="button">DEMANDER UNE RETOUCHE</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+    </footer>
+</body>
 </html>
